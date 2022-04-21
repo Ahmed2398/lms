@@ -1,0 +1,29 @@
+.product-five .list-head-icon .head-icon h5{
+    font-size: 1.5rem !important;
+}
+
+.product-five .card{
+    text-align: center;
+    margin: 1rem 1rem;
+    color: #3292a6 !important;
+    border-radius: 10px;
+}
+
+
+
+.product-five .card-title{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.product-five .card .card-body .icon{
+    font-size: 1.5rem !important;
+    font-weight: 900;
+}
+
+.product-five .card:hover{
+    background-color: #3292a6 !important;
+    color: #fff !important;
+    transform: scale(1.1) !important;
+    cursor: pointer;
+}

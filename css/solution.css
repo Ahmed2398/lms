@@ -1,0 +1,67 @@
+/* Commen for solutions */
+.hr-content{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    width: 45%;
+    border: 0;
+    border-top: 1px solid #ffc107 !important;
+}
+.edms-services , .ecm , .ecm-offered , .aug .tec-dev  h2{
+    color: rgb(182, 36, 111) !important;
+}
+.head-3{
+    color: rgb(182, 36, 111) !important;
+  
+}
+/* Start solution */
+
+#solutions .card-body{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+#solutions .card:hover{
+    transform: scale(1.1);
+}
+
+
+.card-costme{
+    border-radius: 12px;
+}
+.card-body-costme{
+    color: #777;
+    text-align: center;
+}
+.card-head{
+padding: 2rem 0;
+background-color: rgb(182, 36, 111);
+color: #fff;
+border-radius:10px  ;
+}
+.icon{
+    text-align: center;
+    /* padding: 1rem 0; */
+    margin: 5px 0;
+    font-size: 2.5rem;
+    color: #fff !important;
+}
+
+
+.pop{
+    margin: auto;
+    border: 1px solid;
+    border-radius: 13px;
+    padding: 10px;
+    color: #fff;
+    background-color:#ffc107;
+
+}
+.pop:hover{
+    background-color: #3292a6 ;
+    cursor:grab;
+    transition: ease-in-out 1s;
+}
+
+.circle-edms .help-text{
+    color: rgb(182, 36, 111) !important;
+    font-weight: 800;
+}

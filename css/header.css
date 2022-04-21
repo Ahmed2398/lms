@@ -1,0 +1,79 @@
+.home-header {
+    position: relative;
+}
+
+ /* .carousel-control-prev,
+ .carousel-control-next {
+    width           : 50px;
+    height          : 120px;
+    background-color: rgba(255, 255, 255, .2);
+    top             : 50%;
+    transition      : all 0.4s;
+    z-index: 32;
+}
+
+ .carousel-control-prev .carousel-control-prev-icon,
+ .carousel-control-next .carousel-control-next-icon {
+    background-image: unset;
+}
+
+ .carousel-control-prev:hover,
+ .carousel-control-next:hover {
+    background-color: #fff;
+    color           : #000 !important;
+}
+
+ .carousel {
+    position: relative;
+}
+
+.banner .banner-content {
+    position: absolute;
+    z-index : 9999;
+    top     : 45%;
+    left    : 20%
+}
+
+.banner .banner-content h1 {
+    font-size  : 60px;
+    font-weight: 600;
+    color      : #fff;
+    letter-spacing: 3px;
+}
+
+.banner .banner-content-btn button {
+    padding: 19px 50px;
+    background-color: #ffe8c3;
+    border-radius: 0;
+    transition: all .5s;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #3292a6;
+}
+
+.banner .banner-content-btn button:hover {
+    background-color: #001d38;
+    color: #fff;
+} */
+
+.home-header .overlay {
+    position: absolute;
+    z-index: 22;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #001d3860;
+}
+
+@media (max-width: 768px) {
+    .banner .banner-content h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner .banner-content h1 {
+        font-size: 25px;
+    }
+}

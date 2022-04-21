@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LMS</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel ="stylesheet" href="css/nav.css">
+  <link rel ="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/930b7947b4.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<style>
+     .voted {
+  color: #FFC107;
+     }
+     .location .fa-map-marker{
+         color: #777;
+         font-size: 18px;
+     }
+     .card-info{
+            margin-top: 18px;
+        color: #777;
+             font-size: 12px;
+     }
+     .btn-new{
+        min-width: 80px;
+    background-color: transparent ;
+    transition: all 0.3s ease-in;
+    border: 2px solid #262262;
+    border-radius: 50px;
+    color: #262262;
+     }
+</style>
+<body>
+
+
+
+
+    <section id="authors" class="my-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="info-header mb-5">
+              <h1 class="text-warning pb-3">
+                Our Teatcher
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-12">
+                <div class="col-sm-12 col-md-3">
+                    <div class="sidebar sidebar-left mt-sm-30">
+                        <div class="widget">
+                            <h5 class="widget-title line-bottom">Search<span class="text-theme-color-2">Tutors</span></h5>
+                            <form method="get" action="">
+                                <div class="form-row">
+                                    <div class="form-group ">
+                                        <input type="text" placeholder="Tutor Name" name="keyword" class="name form-control search-input" id="tutor_name" >
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group ">
+                                        <select name="country" class="countries form-control search-input" id="countryId" >
+                                            <option value="">Country</option>
+                                            <?php
+                                            if(isset($_GET['country'])){
+                                                ?>
+                                                <option value="<?=$_GET['country']?>" selected><?=$_GET['country']?></option>
+                                                <?php
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group ">
+                                        <select name="state" class="states form-control search-input" id="stateId" >
+                                            <option value="">State</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group ">
+                                        <select name="city" class="cities form-control search-input" id="cityId" >
+                                            <option value="">City</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group ">
+                                        <select name="rate" class="form-control search-input" id="exampleFormControlSelectFurnished" >
+                                            <option selected disabled hidden>Rate</option>
+                                            <option value="all" <?php if(isset($_GET['rate']) && $_GET['rate'] == 'all' ){ echo 'selected'; }?>>All</option>
+                                            <option value="0" <?php if(isset($_GET['rate']) && $_GET['rate'] == 0 ){ echo 'selected'; }?>>0</option>
+                                            <option value="1" <?php if(isset($_GET['rate']) && $_GET['rate'] == 1 ){ echo 'selected'; }?>>1</option>
+                                            <option value="2" <?php if(isset($_GET['rate']) && $_GET['rate'] == 2 ){ echo 'selected'; }?>>2</option>
+                                            <option value="3" <?php if(isset($_GET['rate']) && $_GET['rate'] == 3 ){ echo 'selected'; }?>>3</option>
+                                            <option value="4" <?php if(isset($_GET['rate']) && $_GET['rate'] == 4 ){ echo 'selected'; }?>>4</option>
+                                            <option value="5" <?php if(isset($_GET['rate']) && $_GET['rate'] == 5 ){ echo 'selected'; }?>>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="more-search form-group col text-center">
+                                        <button class="btn  mb-sm-30 btn-sm flip btn-sm  mt-10 ">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Cards -->
+            <div class="col-lg-9 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <img src="img/person1.jpg" alt="" class="img-fluid  w-100 mb-3">
+                            <h5 class="text-muted">Dr-Mona kamel</h5>
+            
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="fas fa-star voted"></i></li>
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star voted"></i></li>
+                                
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star voted"></i></li>
+                                
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star voted"></i></li>
+                                
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star "></i></li>
+                                
+                            
+                            <li class="list-inline-item">
+                                <small>4.4(60)</small></li>
+                            
+                            </ul>
+                            <h6 class="location text-center"><i class="fa fa-map-marker  " >Egypt,Cairo,Cairo</i></h6>
+                            
+                            <p class="card-info">Ph.D. in Quality Management - Regional
+                                Manager, Corporate Sales at Orange Egy..
+                                - Lecturer at AASTMT</p>
+                            <div class=" d-flex justify-content-around">
+                              <div class="">
+                                <a href="#" class="btn btn-outline-secondary btn-new ">more</a>
+                              </div>
+                              <div class="text-right">
+                                <a href="#" class="btn btn-sm btn-info"><i class="fa fa-facebook p-1"></i></a>
+                                <a href="#"class="btn btn-sm btn-info"><i class="fa fa-instagram p-1"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <img src="img/person1.jpg" alt="" class="img-fluid  w-100 mb-3">
+                            <h5 class="text-muted">Dr-Mona kamel</h5>
+            
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="fas fa-star voted"></i></li>
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star voted"></i></li>
+                                
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star voted"></i></li>
+                                
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star voted"></i></li>
+                                
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star "></i></li>
+                                
+                            
+                            <li class="list-inline-item">
+                                <small>4.4(60)</small></li>
+                            
+                            </ul>
+                            <h6 class="location text-center"><i class="fa fa-map-marker  " >Egypt,Cairo,Cairo</i></h6>
+                            
+                            <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quibusdam quis hic dolores, debitis possimus, ipsum reprehenderit illo dolorum nam id magni. Amet, modi sequi laborum iure, dolores maiores sit atque, fuga voluptatibus reiciendis accusamus delectus ducimus iusto soluta eius.</p>
+                            <div class=" d-flex justify-content-around">
+                              <div class="">
+                                <a href="#" class="btn btn-outline-secondary btn-new ">more</a>
+                              </div>
+                              <div class="text-right">
+                                <a href="#" class="btn btn-sm btn-info"><i class="fa fa-facebook p-1"></i></a>
+                                <a href="#"class="btn btn-sm btn-info"><i class="fa fa-instagram p-1"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <img src="img/person1.jpg" alt="" class="img-fluid  w-100 mb-3">
+                            <h5 class="text-muted">Dr-Mona kamel</h5>
+            
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <i class="fas fa-star voted"></i></li>
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star voted"></i></li>
+                                
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star voted"></i></li>
+                                
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star voted"></i></li>
+                                
+                                <li class="list-inline-item active">
+                                    <i class="fas fa-star "></i></li>
+                                
+                            
+                            <li class="list-inline-item">
+                                <small>4.4(60)</small></li>
+                            
+                            </ul>
+                            <h6 class="location text-center"><i class="fa fa-map-marker  " >Egypt,Cairo,Cairo</i></h6>
+                            
+                            <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur, reprehenderit quae sit distinctio, unde illo quos est, ducimus alias aut provident nobis? Natus, minima architecto! Beatae quidem nesciunt, voluptatum illum obcaecati nobis dolorem, cumque necessitatibus sunt ullam doloremque suscipit velit reprehenderit laborum deserunt ad nam sit! Nihil, vitae! Animi blanditiis quasi nulla harum voluptate beatae accusantium quisquam ipsam libero fuga mollitia doloribus molestias accusamus, consectetur ex sit hic dignissimos fugit? Nemo maiores praesentium in. Eum nobis corporis exercitationem ipsa ab tempore tempora voluptatem, quod a dolores, at, excepturi quos autem id quam minus culpa! Consequatur neque harum aperiam quam!</p>
+                            <div class=" d-flex justify-content-around">
+                              <div class="">
+                                <a href="#" class="btn btn-outline-secondary btn-new ">more</a>
+                              </div>
+                              <div class="text-right">
+                                <a href="#" class="btn btn-sm btn-info"><i class="fa fa-facebook p-1"></i></a>
+                                <a href="#"class="btn btn-sm btn-info"><i class="fa fa-instagram p-1"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+                  
+            </div>
+          
+         
+        </div>
+      </div>
+    </section>
+
+   
+      
+        
+      
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navbar-fixed.js"></script>
+</body>
+</html>
